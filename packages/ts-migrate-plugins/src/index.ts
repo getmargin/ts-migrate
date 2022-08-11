@@ -16,6 +16,7 @@ import tsIgnorePlugin from './plugins/ts-ignore';
 import updateSourceText, {
   SourceTextUpdate as SourceTextUpdateType,
 } from './utils/updateSourceText';
+import fixRelayTypes from "./plugins/fix-relay-types";
 
 export type Plugin<T = unknown> = PluginType<T>;
 export type SourceTextUpdate = SourceTextUpdateType;
@@ -35,6 +36,7 @@ export {
   reactShapePlugin,
   stripTSIgnorePlugin,
   tsIgnorePlugin,
+  fixRelayTypes
 };
 
 export { updateSourceText };
